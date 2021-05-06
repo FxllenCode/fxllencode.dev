@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "typer-js": "^5.5.2",
+    "wowjs": "^1.1.3"
+  }
+}

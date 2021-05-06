@@ -1,0 +1,14 @@
+.blurred-element {
+    filter: blur(1px);
+    filter: url("blur.svg#gaussian_blur");
+    -webkit-filter: blur(1px);
+}
+
+.main-background {
+    background: linear-gradient( -45deg, rgba(255, 172, 244, 0.747), rgba(136, 197, 253, 0.534) 100%);
+}
+
+.typewriter {
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(255, 255, 255);
+}
