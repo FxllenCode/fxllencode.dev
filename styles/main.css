@@ -16,3 +16,31 @@
 .global-font {
     font-weight: 25;
 }
+
+.card-left {
+    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-right {
+    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-middle {
+    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.card-left:hover {
+	transform: scale(1.02) rotate(-1deg);
+	box-shadow: 3px 5px 10px #443a3f41;
+}
+
+.card-right:hover {
+	transform: scale(1.02) rotate(1deg);
+	box-shadow: 3px 5px 10px #443a3f41;
+}
+
+.card-middle:hover {
+	transform: scale(1.04);
+	
+}
