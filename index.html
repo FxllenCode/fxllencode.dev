@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="node_modules/animate.css/animate.css">
   <link rel="stylesheet" href="node_modules/typer-js/src/typer.css">
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
   <link rel="shortcut icon" type="image/png" href="assets/MainPFPPng.png" />
 
 
@@ -116,7 +117,7 @@
       <div class="mask main-background">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white">
-            <img class="mb-2 wow swing" height="300vh" src="assets/MainPFPPngFixA.png" alt="FxllenCode">
+            <img data-aos="fadeInUp" class="mb-2" height="300vh" src="assets/MainPFPPngFixA.png" alt="FxllenCode">
 
             <h1 class="mb-3 typewriter"></h1>
 
@@ -430,16 +431,13 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
   <script src="https://unpkg.com/typer-js"></script>
   <script src="js/main.js"></script>
-  <script src="node_modules/wowjs/dist/wow.min.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
   <script>
-   var wow = new WOW({
-    boxClass:     'wow',
-    animateClass: 'animate__animated',
-    offset:       200,
-    mobile:       false,
-    live:         true
-})
-wow.init();
+    AOS.init({
+  useClassNames: true,
+  initClassName: false,
+  animatedClassName: 'animated',
+});
   </script>
 </body>
 
