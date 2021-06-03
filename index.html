@@ -116,7 +116,7 @@
       <div class="mask main-background">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white">
-            <img class="mb-2" height="300vh" src="assets/MainPFPPngFixA.png" alt="FxllenCode">
+            <img class="mb-2 wow swing" height="300vh" src="assets/MainPFPPngFixA.png" alt="FxllenCode">
 
             <h1 class="mb-3 typewriter"></h1>
 
@@ -330,7 +330,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4 wow swing">
             <div class="card card-middle">
               <div class="card-body">
                 <h5 class="card-title">My devforum portfolio!</h5>
@@ -432,7 +432,14 @@
   <script src="js/main.js"></script>
   <script src="node_modules/wowjs/dist/wow.min.js"></script>
   <script>
-    new WOW().init();
+   var wow = new WOW({
+    boxClass:     'wow',
+    animateClass: 'animate__animated',
+    offset:       200,
+    mobile:       false,
+    live:         true
+})
+wow.init();
   </script>
 </body>
 
