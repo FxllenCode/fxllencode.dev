@@ -1,3 +1,11 @@
+/* what the fuck AOS */
+[data-aos] {
+    visibility: hidden;
+}
+[data-aos].animate__animated {
+    visibility: visible;
+}
+/* what the fuck AOS */
 .blurred-element {
     filter: blur(1px);
     filter: url("blur.svg#gaussian_blur");
