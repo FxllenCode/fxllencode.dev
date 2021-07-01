@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   <link rel="stylesheet" href="node_modules/typer-js/src/typer.css">
-  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
   <link rel="shortcut icon" type="image/png" href="assets/MainPFPPng.png" />
 
 
@@ -117,11 +116,13 @@
       <div class="mask main-background">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white">
-            <img data-aos="fadeInUp" class="mb-2" height="300vh" src="assets/MainPFPPngFixA.png" alt="FxllenCode">
+            <img class="mb-2 wow animate__animated animate__bounceIn" height="300vh" src="assets/MainPFPPngFixA.png"
+              alt="FxllenCode">
 
-            <h1 class="mb-3 typewriter"></h1>
+            <h1 class="mb-3 typewriter wow animate__animated animate__fadeIn"></h1>
 
-            <a class="btn btn-outline-light btn-lg m-2" href="#work" role="button">My Projects</a>
+            <a class="btn btn-outline-light btn-lg m-2 wow animate__animated animate__fadeIn" href="#work"
+              role="button">My Projects</a>
           </div>
         </div>
       </div>
@@ -136,10 +137,10 @@
       <!--Section: Content-->
       <section id="about">
         <div class="row text-center ml-5 mr-5">
-          <h1 class="mb-5"><strong>About Me</strong></h1>
+          <h1 class="mb-5 wow animate__animated animate__fadeInUp"><strong>About Me</strong></h1>
           <br>
-          <h2>Hello! 👋</h2>
-          <h5 class="global-font mb-5">
+          <h2 class="wow animate__animated animate__tada">Hello! 👋</h2>
+          <h5 class="global-font mb-5 mb-5 wow animate__animated animate__fadeInUpBig">
             I'm FxllenCode, just your average 14-year-old programmer with too much time on my hands! I've been a
             developer for 4 years now. I started out learning HTML and CSS, (which I still use today!) then moved on to
             other languages, such as JS and Lua. I am a proud Roblox Developer and Veteran. I've been on the platform
@@ -148,8 +149,8 @@
           </h5>
 
           <br>
-          <h2>FAQ</h2>
-          <h5 style="text-align: left;" class="global-font">
+          <h2 class="wow animate__animated animate__fadeInUp">FAQ</h2>
+          <h5 style="text-align: left;" class="global-font wow animate__animated animate__fadeInUpBig">
             <b>Q:</b> How did you learn programming?
             <br>
             <b>A:</b> For Roblox, I taught myself on the developer hub. I would start at the <a
@@ -177,9 +178,9 @@
             city and the airport because, why not!</a>
           </h5>
 
-          <h2 class="mt-5 mb-5">Photography 📸</h2>
+          <h2 class="mt-5 mb-5 wow animate__animated animate__fadeInUp">Photography 📸</h2>
 
-          <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide wow animate__animated animate__fadeInUpBig" data-mdb-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -377,15 +378,17 @@
 
         <div class="row d-flex justify-content-center">
           <div class="col-md-6">
-            <div class="row mb-5"> 
-              <h5 class="text-center">For Most Inquiries: <a href="mailto:fxllencode@fxllencode.dev" target="_blank"><b>fxllencode@fxllencode.dev</b></a> </h5> 
+            <div class="row mb-5">
+              <h5 class="text-center">For Most Inquiries: <a href="mailto:fxllencode@fxllencode.dev"
+                  target="_blank"><b>fxllencode@fxllencode.dev</b></a> </h5>
 
             </div>
-            <div class="row mb-5"> 
-              <h5 class="text-center">For Press Inquiries <b>ONLY</b>: <a href="mailto:press@fxllencode.dev" target="_blank"><b>press@fxllencode.dev</b></a> </h5> 
+            <div class="row mb-5">
+              <h5 class="text-center">For Press Inquiries <b>ONLY</b>: <a href="mailto:press@fxllencode.dev"
+                  target="_blank"><b>press@fxllencode.dev</b></a> </h5>
 
             </div>
-        </div>
+          </div>
       </section>
       <!--Section: Content-->
     </div>
@@ -394,7 +397,7 @@
 
   <!--Footer-->
   <footer class="bg-light text-lg-start">
-    
+
 
     <hr class="m-0" />
 
@@ -431,13 +434,24 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
   <script src="https://unpkg.com/typer-js"></script>
   <script src="js/main.js"></script>
-  <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="node_modules/wow.js/dist/wow.min.js"></script>
   <script>
-    AOS.init({
-  useClassNames: true,
-  initClassName: false,
-  animatedClassName: 'animate__animated',
-});
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animate', // animation css class (default is animated)
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null,    // optional scroll container selector, otherwise use window,
+        resetAnimation: true,     // reset animation on end (default is true)
+      }
+    );
+    wow.init();
   </script>
 </body>
 
